@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sreekanth Laundry Shop | Professional Laundry & Dry Cleaning Services</title>
+  <meta
+    name="description"
+    content="Sreekanth Laundry Shop offers professional laundry, dry cleaning, ironing, pickup and delivery services."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="announcement">
+        <span class="badge">Special Offer</span>
+        <span>Get <strong>15% OFF</strong> on your first pickup order! Use code <strong class="promo-code" onclick="copyPromoCode()">FRESH15</strong></span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919999999999">📞 +91 99999 99999</a>
+        <span class="divider">|</span>
+        <span>🕒 Mon - Sun: 8:00 AM - 8:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+
+      <a href="#home" class="logo">
+        <div class="logo-icon-wrapper">
+          <span class="logo-badge">SL</span>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">Sreekanth</span>
+          <strong class="brand-highlight">Laundry</strong>
+        </div>
+      </a>
+
+      <nav id="navMenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="btn nav-book-btn">Book Pickup</a>
+      </nav>
+
+      <div class="nav-right-actions">
+        <a href="tel:+919999999999" class="phone-chip">
+          <span>📞</span> Call Us
+        </a>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="container hero-content">
+
+      <div class="hero-text">
+
+        <div class="hero-tag">
+          <span class="dot"></span> Doorstep Pickup & Fast Delivery
+        </div>
+
+        <p class="small-title">WELCOME TO SREEKANTH LAUNDRY</p>
+
+        <h1>
+          Fresh Clothes.<br />
+          <span>Fresh Confidence.</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Professional laundry, dry cleaning and ironing services
+          with convenient doorstep pickup and delivery. High hygiene standards, color-safe detergents, and wrinkle-free steam press.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#booking" class="btn primary">
+            <span>Book Pickup</span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="#services" class="btn secondary">Our Services</a>
+          <a href="https://wa.me/919999999999?text=Hello%20Sreekanth%20Laundry,%20I%20would%20like%20to%20schedule%20a%20pickup." target="_blank" class="btn whatsapp-hero">
+            <span>💬 WhatsApp Order</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-box">
+            <strong>10,000+</strong>
+            <span>Garments Cleaned</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-box">
+            <strong>24h</strong>
+            <span>Turnaround Time</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-box">
+            <strong>4.9 ★</strong>
+            <span>Customer Rating</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="hero-card-container">
+        <div class="hero-card-glow"></div>
+        <div class="hero-card">
+
+          <div class="card-ribbon">POPULAR</div>
+
+          <div class="laundry-icon">🧺</div>
+
+          <h3>Doorstep Laundry</h3>
+
+          <p>
+            We collect your clothes, professionally clean them
+            and deliver them back fresh, fragrant and ready to wear.
+          </p>
+
+          <div class="hero-feature">
+            <span>✓</span> Quality Fabric Cleaning
+          </div>
+
+          <div class="hero-feature">
+            <span>✓</span> Quick 24-48h Service
+          </div>
+
+          <div class="hero-feature">
+            <span>✓</span> Easy Instant Booking
+          </div>
+
+          <div class="hero-card-action">
+            <a href="#booking" class="btn primary full">Schedule Doorstep Pickup</a>
+          </div>
+
+          <div class="card-guarantee">
+            🛡️ 100% Satisfaction & Fabric Safety Guarantee
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HIGHLIGHTS BAR -->
+  <section class="highlights-bar">
+    <div class="container highlights-grid">
+      <div class="highlight-box">
+        <div class="h-icon">🌿</div>
+        <div>
+          <h4>Eco Detergents</h4>
+          <p>Gentle on fabrics, zero harsh bleaches</p>
+        </div>
+      </div>
+      <div class="highlight-box">
+        <div class="h-icon">⚡</div>
+        <div>
+          <h4>Express 24h Delivery</h4>
+          <p>On-time collection and drop-off</p>
+        </div>
+      </div>
+      <div class="highlight-box">
+        <div class="h-icon">🧼</div>
+        <div>
+          <h4>Hygienic Single Loads</h4>
+          <p>Never mixed with others' clothes</p>
+        </div>
+      </div>
+      <div class="highlight-box">
+        <div class="h-icon">🚚</div>
+        <div>
+          <h4>Free Pickup Over ₹300</h4>
+          <p>Within standard service areas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <p>WHAT WE DO</p>
+        <h2>Our Laundry Services</h2>
+        <span>
+          Professional care for your everyday and special garments.
+        </span>
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="service-card" onclick="selectServiceInForm('Wash & Fold')">
+          <div class="service-badge">Everyday</div>
+          <div class="service-icon">👕</div>
+          <h3>Wash & Fold</h3>
+          <p>
+            Complete antibacterial washing, tumble drying, and neat folding for everyday shirts, tees, jeans, and casuals.
+          </p>
+          <div class="service-rate">Starting at ₹60 / kg</div>
+          <a href="#booking" class="service-cta">Book Service →</a>
+        </div>
+
+
+        <div class="service-card" onclick="selectServiceInForm('Dry Cleaning')">
+          <div class="service-badge">Delicates</div>
+          <div class="service-icon">✨</div>
+          <h3>Dry Cleaning</h3>
+          <p>
+            Professional gentle cleaning for suits, silk sarees, designer dresses, blazers, and woolens with spot treatment.
+          </p>
+          <div class="service-rate">Starting at ₹80 / piece</div>
+          <a href="#booking" class="service-cta">Book Service →</a>
+        </div>
+
+
+        <div class="service-card" onclick="selectServiceInForm('Ironing')">
+          <div class="service-badge">Crisp</div>
+          <div class="service-icon">♨️</div>
+          <h3>Ironing</h3>
+          <p>
+            Neat and professional industrial steam pressing for shirts, trousers, uniforms, and linens without fabric scorch.
+          </p>
+          <div class="service-rate">Starting at ₹15 / piece</div>
+          <a href="#booking" class="service-cta">Book Service →</a>
+        </div>
+
+
+        <div class="service-card" onclick="selectServiceInForm('Pickup & Delivery')">
+          <div class="service-badge">Doorstep</div>
+          <div class="service-icon">🚚</div>
+          <h3>Pickup & Delivery</h3>
+          <p>
+            Convenient doorstep pickup and drop delivery right at your scheduled hour. Save precious time and effort.
+          </p>
+          <div class="service-rate">Free on orders &gt; ₹300</div>
+          <a href="#booking" class="service-cta">Book Service →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CALCULATOR -->
+  <section class="section calculator-section" id="calculator">
+    <div class="container">
+      <div class="section-heading">
+        <p>INSTANT PRICE ESTIMATOR</p>
+        <h2>Calculate Your Laundry Cost</h2>
+        <span>Get an immediate estimate and push it straight into your booking!</span>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-row">
+          
+          <div class="calc-controls">
+            <div class="calc-field">
+              <label for="calcService">Select Service Category</label>
+              <select id="calcService" onchange="updateCalc()">
+                <option value="60" data-unit="kg" data-name="Wash & Fold">Wash & Fold (₹60 / kg)</option>
+                <option value="90" data-unit="kg" data-name="Wash & Iron" selected>Wash & Steam Iron (₹90 / kg)</option>
+                <option value="80" data-unit="piece" data-name="Dry Cleaning">Dry Cleaning (₹80 / piece)</option>
+                <option value="15" data-unit="piece" data-name="Ironing">Steam Press Ironing (₹15 / piece)</option>
+              </select>
+            </div>
+
+            <div class="calc-field">
+              <div class="slider-header">
+                <label id="sliderLabel">Weight (kg):</label>
+                <span class="calc-pill" id="sliderVal">5 kg</span>
+              </div>
+              <input type="range" id="calcSlider" min="1" max="25" value="5" oninput="updateSlider(this.value)">
+              <div class="slider-scale">
+                <span>1 kg</span>
+                <span>10 kg</span>
+                <span>25 kg</span>
+              </div>
+            </div>
+
+            <div class="calc-field">
+              <label class="checkbox-label">
+                <input type="checkbox" id="calcExpress" onchange="updateCalc()">
+                <span class="custom-check"></span>
+                <span>Same-Day Express Delivery (+₹30 rush handling)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="calc-result">
+            <div class="result-box">
+              <div class="result-label">Estimated Total</div>
+              <div class="result-price">
+                <small>₹</small><span id="calcTotal">450</span>
+              </div>
+              <p class="result-detail" id="calcDetail">5 kg × ₹90 (Wash & Steam Iron)</p>
+              
+              <div class="perk-pill" id="freeDeliveryPill">
+                🎉 FREE Doorstep Delivery included!
+              </div>
+
+              <button class="btn primary full" onclick="applyCalcToBooking()">
+                Use This Estimate & Book Now
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICING -->
+  <section class="section pricing-section" id="pricing">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <p>SIMPLE PRICING</p>
+        <h2>Our Popular Services</h2>
+        <span>Transparent rates with no hidden fees.</span>
+      </div>
+
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+
+          <div class="tier-label">BASIC CARE</div>
+          <h3>Wash & Fold</h3>
+
+          <div class="price">
+            ₹<strong>60</strong>
+            <small>/ kg</small>
+          </div>
+
+          <div class="divider"></div>
+
+          <ul>
+            <li>✓ Washing</li>
+            <li>✓ Drying</li>
+            <li>✓ Folding</li>
+            <li>✓ Quality Check</li>
+            <li>✓ Individual Customer Bag</li>
+          </ul>
+
+          <a href="#booking" class="price-btn" onclick="selectServiceInForm('Wash & Fold')">Book Now</a>
+
+        </div>
+
+
+        <div class="price-card featured">
+
+          <div class="popular">POPULAR</div>
+          <div class="tier-label tier-popular">MOST REQUESTED</div>
+
+          <h3>Wash & Iron</h3>
+
+          <div class="price">
+            ₹<strong>90</strong>
+            <small>/ kg</small>
+          </div>
+
+          <div class="divider"></div>
+
+          <ul>
+            <li>✓ Washing</li>
+            <li>✓ Drying</li>
+            <li>✓ Professional Ironing</li>
+            <li>✓ Neat Packaging</li>
+            <li>✓ Free Pickup (orders &gt; ₹300)</li>
+          </ul>
+
+          <a href="#booking" class="price-btn" onclick="selectServiceInForm('Wash & Iron')">Book Now</a>
+
+        </div>
+
+
+        <div class="price-card">
+
+          <div class="tier-label">PREMIUM CARE</div>
+          <h3>Dry Cleaning</h3>
+
+          <div class="price">
+            ₹<strong>80</strong>
+            <small>/ piece</small>
+          </div>
+
+          <div class="divider"></div>
+
+          <ul>
+            <li>✓ Fabric Care</li>
+            <li>✓ Stain Treatment</li>
+            <li>✓ Professional Cleaning</li>
+            <li>✓ Quality Packaging</li>
+            <li>✓ Hanger Delivery</li>
+          </ul>
+
+          <a href="#booking" class="price-btn" onclick="selectServiceInForm('Dry Cleaning')">Book Now</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section class="steps-section" id="steps">
+
+    <div class="container">
+
+      <div class="section-heading light">
+
+        <p>HOW IT WORKS</p>
+
+        <h2>Simple 4-Step Process</h2>
+        <span>Easy, reliable, and convenient garment care right at your fingertips.</span>
+
+      </div>
+
+
+      <div class="steps-grid">
+
+        <div class="step">
+          <div class="step-badge">
+            <span class="step-num">01</span>
+            <span class="step-ico">📱</span>
+          </div>
+          <h3>Book</h3>
+          <p>Contact us online or schedule your laundry pickup.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-badge">
+            <span class="step-num">02</span>
+            <span class="step-ico">🛵</span>
+          </div>
+          <h3>Pickup</h3>
+          <p>Our team collects your clothes from your location.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-badge">
+            <span class="step-num">03</span>
+            <span class="step-ico">✨</span>
+          </div>
+          <h3>Clean</h3>
+          <p>Your clothes are cleaned, conditioned and professionally finished.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-badge">
+            <span class="step-num">04</span>
+            <span class="step-ico">🎁</span>
+          </div>
+          <h3>Delivery</h3>
+          <p>Your fresh clothes are delivered back to you in crisp packaging.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+
+    <div class="container about">
+
+      <div class="about-image">
+        <div class="about-card-box">
+          <div class="about-logo">SL</div>
+          <h4>Sreekanth Laundry</h4>
+          <p>Hygienic Garment Care</p>
+          <div class="badge-five">5+ Years of Excellence</div>
+        </div>
+      </div>
+
+
+      <div class="about-content">
+
+        <p class="section-label">ABOUT US</p>
+
+        <h2>Your Clothes Deserve Professional Care</h2>
+
+        <p>
+          Sreekanth Laundry Shop provides reliable laundry,
+          dry cleaning and ironing services for families,
+          students, professionals and local businesses.
+        </p>
+
+        <p>
+          Our goal is simple — clean clothes, careful handling
+          and convenient service for every customer. We never mix loads, and every garment is treated with specialized care.
+        </p>
+
+
+        <div class="about-points">
+
+          <div class="point-item">
+            <span class="point-check">✓</span>
+            <div>
+              <strong>Professional Cleaning</strong>
+              <p>Commercial-grade ozone sanitized washing</p>
+            </div>
+          </div>
+
+          <div class="point-item">
+            <span class="point-check">✓</span>
+            <div>
+              <strong>Careful Fabric Handling</strong>
+              <p>Zero shrinkage, tailored temperature controls</p>
+            </div>
+          </div>
+
+          <div class="point-item">
+            <span class="point-check">✓</span>
+            <div>
+              <strong>Convenient Pickup</strong>
+              <p>Doorstep collection and prompt delivery</p>
+            </div>
+          </div>
+
+          <div class="point-item">
+            <span class="point-check">✓</span>
+            <div>
+              <strong>Customer Satisfaction</strong>
+              <p>100% money-back and rewash guarantee</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- REVIEWS -->
+  <section class="section reviews-section">
+    <div class="container">
+      <div class="section-heading">
+        <p>TESTIMONIALS</p>
+        <h2>What Our Customers Say</h2>
+        <span>Real feedback from customers who trust Sreekanth Laundry.</span>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"The wash and steam iron service is extraordinary! Shirts were folded like new garments with sharp creases, and the scent was so refreshing."</p>
+          <div class="author">
+            <div class="avatar">RP</div>
+            <div>
+              <strong>Rahul Patel</strong>
+              <span>Verified Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Prompt pickup and delivery. I gave my heavy silk saree and blazer for dry cleaning; they removed a tough tea stain without damaging the delicate embroidery!"</p>
+          <div class="author">
+            <div class="avatar">AS</div>
+            <div>
+              <strong>Ananya Sharma</strong>
+              <span>Verified Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Super convenient! Having my weekly clothes picked up, washed by kilo, and delivered back folded saves me hours every weekend. Highly recommend!"</p>
+          <div class="author">
+            <div class="avatar">VK</div>
+            <div>
+              <strong>Vikram Kumar</strong>
+              <span>Verified Customer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BOOKING -->
+  <section class="section booking-section" id="booking">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <p>BOOK YOUR SERVICE</p>
+
+        <h2>Schedule a Laundry Pickup</h2>
+
+        <span>
+          Fill in your details and we'll contact you.
+        </span>
+
+      </div>
+
+
+      <form class="booking-form" id="bookingForm" onsubmit="handleBooking(event)">
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="name">Full Name <span class="req">*</span></label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="req">*</span></label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter 10-digit phone number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="service">Service <span class="req">*</span></label>
+
+            <select id="service" required>
+
+              <option value="Wash & Fold">Wash & Fold</option>
+
+              <option value="Wash & Iron" selected>Wash & Iron</option>
+
+              <option value="Dry Cleaning">Dry Cleaning</option>
+
+              <option value="Ironing">Ironing</option>
+
+              <option value="Pickup & Delivery">Pickup & Delivery</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="date">Pickup Date <span class="req">*</span></label>
+
+            <input
+              type="date"
+              id="date"
+              required
+            />
+
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="timeSlot">Pickup Time Slot</label>
+            <select id="timeSlot">
+              <option value="Morning (8:00 AM - 11:00 AM)">Morning (8:00 AM - 11:00 AM)</option>
+              <option value="Afternoon (12:00 PM - 3:00 PM)">Afternoon (12:00 PM - 3:00 PM)</option>
+              <option value="Evening (4:00 PM - 8:00 PM)" selected>Evening (4:00 PM - 8:00 PM)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="loadWeight">Estimated Load / Garments</label>
+            <input
+              type="text"
+              id="loadWeight"
+              placeholder="e.g. 5 kg or 12 clothes"
+            />
+          </div>
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="address">Pickup Address <span class="req">*</span></label>
+
+          <textarea
+            id="address"
+            rows="4"
+            placeholder="Enter your complete address with landmark"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <div class="booking-btn-row">
+          <button type="submit" class="btn primary full" id="submitBtn">
+            Send Booking Request
+          </button>
+
+          <button type="button" class="btn whatsapp-full" onclick="sendViaWhatsApp()">
+            💬 Book Directly on WhatsApp
+          </button>
+        </div>
+
+        <div class="form-safe">
+          🔒 Your details are 100% secure and used solely for scheduling your pickup.
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-heading">
+        <p>FREQUENTLY ASKED QUESTIONS</p>
+        <h2>Everything You Need To Know</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <h4>What is your turnaround delivery time?</h4>
+            <span class="faq-sign">+</span>
+          </div>
+          <div class="faq-a">
+            <p>Our standard turnaround time is 24 to 48 hours. We also offer same-day express service if you need urgent garment readiness!</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <h4>Do you mix my laundry with other people's clothes?</h4>
+            <span class="faq-sign">+</span>
+          </div>
+          <div class="faq-a">
+            <p>Never! We maintain a strict single-customer load policy. Your garments are tagged and washed completely separately for 100% hygiene.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <h4>How does free delivery work?</h4>
+            <span class="faq-sign">+</span>
+          </div>
+          <div class="faq-a">
+            <p>Doorstep pickup and delivery are completely FREE on all orders of ₹300 or above within our service coverage area.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div>
+
+          <p class="section-label">CONTACT US</p>
+
+          <h2>Let's Take Care of Your Laundry</h2>
+
+          <p>
+            Have questions about our services?
+            Contact Sreekanth Laundry Shop today.
+          </p>
+
+          <div class="contact-badges">
+            <div class="c-badge">⚡ Instant WhatsApp Response</div>
+            <div class="c-badge">🛵 Friendly Doorstep Couriers</div>
+            <div class="c-badge">📅 Open 7 Days a Week</div>
+          </div>
+
+        </div>
+
+
+        <div class="contact-info">
+
+          <div class="contact-card">
+            <strong>📞 Phone</strong>
+            <a href="tel:+919999999999">
+              +91 99999 99999
+            </a>
+            <small>Direct phone call</small>
+          </div>
+
+
+          <div class="contact-card">
+            <strong>💬 WhatsApp</strong>
+            <a
+              href="https://wa.me/919999999999?text=Hello%20Sreekanth%20Laundry,%20I%20have%20an%20inquiry."
+              target="_blank"
+            >
+              Chat on WhatsApp
+            </a>
+            <small>Quickest response</small>
+          </div>
+
+
+          <div class="contact-card">
+            <strong>📍 Location</strong>
+            <span>
+              Main Road, Market Complex, Your City
+            </span>
+            <small>Walk-ins welcome</small>
+          </div>
+
+
+          <div class="contact-card">
+            <strong>🕐 Opening Hours</strong>
+            <span>
+              Mon - Sun: 8:00 AM - 8:00 PM
+            </span>
+            <small>Open all 7 days</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        <h3>Sreekanth Laundry</h3>
+
+        <p>
+          Clean. Fresh. Professional.
+        </p>
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Sreekanth Laundry Shop. All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/919999999999?text=Hello%20Sreekanth%20Laundry,%20I%20would%20like%20to%20schedule%20a%20pickup."
+    target="_blank"
+    title="Chat on WhatsApp"
+  >
+    💬
+  </a>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="confirmModal">
+    <div class="modal-box">
+      <div class="modal-emoji">🎉</div>
+      <h3>Pickup Request Confirmed!</h3>
+      <p>Thank you for choosing Sreekanth Laundry Shop. We have received your pickup booking request.</p>
+      <div class="receipt-box" id="modalReceipt"></div>
+      <div class="modal-btn-row">
+        <button class="btn primary" onclick="closeModal()">Close</button>
+        <button class="btn whatsapp-hero" onclick="shareBookingToWhatsApp()">Share to WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
